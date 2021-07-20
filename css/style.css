@@ -1,0 +1,363 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    }
+.imagen-e{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px; 
+}
+.contenedor-v{
+    height:0%;
+    width:100%;
+    max-width:100%;
+    padding-top:56.25%; 
+    position:relative;
+}
+body{
+    overflow-x: hidden;
+}
+a>div{
+    text-decoration: none;
+    color: darkgray;
+}
+a{
+    text-decoration: none;
+    color: darkgray;
+}
+.container-mod{
+    width: 78% !important;
+}
+/*----------------------------------------PROFILE STYLES----------------------------------------*/
+.icons>a {
+	text-decoration: none;
+	color: darkgray;
+}
+.location>a{
+    text-decoration: none;
+    color: white;
+}
+.name{
+    font-size: 2.8rem;
+	color: gainsboro;
+}
+.description{
+    font-size: 1.3rem;;
+}
+.subtitle{
+    font-size: 1.5em;
+	color: darkgray;
+}
+.location{
+	color: white;
+	font-size: 1.5rem;
+	background-color: cornflowerblue;
+	padding: 10px;
+	margin-left: 27%;
+	margin-right: 27%;
+	border-radius: 8px;
+    transition: 0.3s;
+}
+.location:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.image-profile{
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+.hr{
+    position: relative;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+	border: 1.5px solid;
+    width: 90%;
+    left: 5%;
+}
+.image-bg{
+    background-image: url(../img/bg.jpg);
+    height: 100vh i !important;
+    width: 100vw;
+ 
+}
+.box-s{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 6px;
+}
+.box-s:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
+@media (min-width: 100px) and (max-width: 728px) {
+    .name{
+        font-size: 2rem;
+        color: gainsboro;
+    }
+    .description{
+        font-size: 1rem;;
+    }
+    .subtitle{
+        font-size: .9rem;
+        color: darkgray;
+    }
+    .icons{
+        font-size: .7rem;
+    }
+    .location{
+        font-size: 1rem;
+    }
+}
+/*-------------------------------------------------ICONOS--------------------------------------------*/
+.fa-stack:hover {
+	transition: 0.9s;
+	transform: rotate(360deg);
+}
+
+.fa-lg {
+	margin-bottom: 20px;
+}
+/* --------------------------------Colores iconos--------------------------------*/
+.fa-twitter:hover {
+	border-radius: 50%;
+	color: white;
+	background-color: #1da1f2;
+}
+
+.fa-facebook:hover {
+	border-radius: 50%;
+	color: white;
+	background-color: #3b5998;
+}
+
+.fa-google-plus:hover {
+	border-radius: 50%;
+	color: white;
+	background-color: #dd4b39;
+}
+
+.link-1:hover {
+	border-radius: 50%;
+	color: white;
+	background-color: black;
+}
+
+.fa-instagram:hover {
+	border-radius: 50%;
+	color: white;
+	background-color: #5851db;
+}
+.fa-youtube:hover{
+    border-radius: 50%;
+    color: white;
+    background-color: #e81f10;
+}
+.fa-wikipedia-w:hover{
+    border-radius: 50%;
+    color: white;
+    background-color: #10e8cf;
+}
+.link-2:hover{
+    border-radius: 50%;
+    color: black;
+    background-color: #e9af0f; 
+}
+
+/*------------------------- FUNCIONALIDAD VENTANAS MODAL------------------------------------- */
+.modal-videos{
+    padding: 0;
+}
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalbox{
+    position: relative;
+    padding: 0 !important;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80% !important;
+    margin: 5% auto;
+}
+.iconos-ebook{
+    font-size: .7rem;
+}
+
+.movedown {
+    margin: 10%;
+}
+.modalmask:target .movedown{       
+    margin:5% 15%;    
+}
+.modalmask:target .movedown-v{       
+    margin:5% 8%;    
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+    .modalmask:target .movedown-v{       
+        margin:5% 3%;    
+    }
+}
+.video{
+    width: 100%;
+}
+#modal1:target {
+    opacity:1;
+    pointer-events: auto;
+
+}
+#modal2:target {
+    opacity:1;
+    pointer-events: auto;
+
+}
+#m-ebook-1:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-ebook-2:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-ebook-3:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-curso-1:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-curso-2:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-curso-3:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-evento-1:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-evento-2:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#m-evento-3:target {
+    opacity:1;
+    pointer-events: auto;
+}
+/*---------------------------------------------------Estilos Modal Ebooks--------------------------------------- */
+.contenedor{
+    width: 70%;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+.estrellas-modal{
+    font-size: 1.4rem;
+    color: #d1d100;
+}
+.precio-modal{
+    width: 100%;
+    background-color: orange;
+}
+.precio-texto{
+    background-color: orange;
+    background-size: cover;
+    background-position: center;
+}
+.reviews-book{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icono{
+	color: white;
+	font-size: 1.2rem;
+	background-color: #296eee;
+	padding: 5px 2px;
+    border: .2px solid gray;
+	border-radius: 8px;
+    transition: 0.3s;
+}
+.carrito{
+    margin-right: 6px;
+}
+.icono:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.caracteristica{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.texto{
+    text-align: left;
+}
+/*-----------------------------------------------SECCION VIDEOS----------------------------------------- */
+.bg-difum{
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 149, 36, .6);
+}
+h1{
+    font-size: 4rem;
+    color: white;
+}
+.mask{
+    transition: all .8s;
+}
+.mask:hover{
+ opacity: 0;
+}
+
+.reviews{
+    width: 80%;
+    color: black;
+    margin-left: auto;
+    background-color: white;
+    margin-top: -8%;
+    /*transform: translateY(-30%);*/
+    position: relative;
+}
+.estrellas{
+    font-size: 1.1rem;
+    color: #d1d100;
+}
+.ebook{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.valoraciones{
+    font-size: .7rem;
+    color: darkgray;
+    align-items: center;
+}
+.precio{
+    
+    background-color: orange;
+}
